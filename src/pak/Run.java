@@ -6,8 +6,7 @@ class A
 	static void test(Object obj)
 	{
 		String classname=obj.getClass().toString();
-		
-		
+				
 		switch(classname)
 		{
 		case "java.lang.Integer":
@@ -37,10 +36,10 @@ public class Run
 
 	public static void main(String[] args)
 	{	
-		Integer i1=new Integer(10); //boxing		
+		Integer i1=Integer.valueOf(10); //boxing		
 	    A.test(i1);
 	    
-	    Double d1=new Double(10.02);
+	    Double d1=Double.valueOf(10.02);
 	    A.test(d1);
 	    
 	    String str1=new String("Jimmy");
